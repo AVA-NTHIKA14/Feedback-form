@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI/UX Class - Google Meet Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">UI/UX Class Feedback Form</h1>
+  <p id="description">Thank you for attending the session on Google Meet. Please share your feedback below!</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" placeholder="18" min="10" max="99" required />
+
+    <label for="dropdown">Your role:</label>
+    <select id="dropdown" name="role" required>
+      <option value="">-- Select your role --</option>
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+      <option value="teacher">Teacher</option>
+    </select>
+
+    <p>How would you rate the UI/UX session?</p>
+    <label><input type="radio" name="satisfaction" value="excellent" required /> Excellent</label>
+    <label><input type="radio" name="satisfaction" value="good" /> Good</label>
+    <label><input type="radio" name="satisfaction" value="average" /> Average</label>
+    <label><input type="radio" name="satisfaction" value="poor" /> Poor</label>
+
+    <p>What topics did you find useful? (Select all that apply)</p>
+    <label><input type="checkbox" name="features" value="design-principles" /> Design Principles</label>
+    <label><input type="checkbox" name="features" value="wireframes" /> Wireframing Tools</label>
+    <label><input type="checkbox" name="features" value="prototyping" /> Prototyping Methods</label>
+    <label><input type="checkbox" name="features" value="figma" /> Figma Usage</label>
+
+    <label for="comments">Any suggestions or feedback?</label>
+    <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Your thoughts..."></textarea>
+
+    <button type="submit" id="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
