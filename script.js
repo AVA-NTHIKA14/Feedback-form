@@ -1,4 +1,4 @@
-<script>
+
   document.getElementById("survey-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -36,4 +36,4 @@
       event.target.submit();
     }
   });
-</script>
+
